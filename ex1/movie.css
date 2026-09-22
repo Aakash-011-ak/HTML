@@ -1,0 +1,85 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.back {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back:hover {
+    color: red;
+}
+h1 {
+    text-align: center;
+    color: darkred;
+}
+h2 {
+    color: darkblue;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+th {
+    background-color: darkred;
+    color: white;
+    padding: 12px;
+}
+td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+td img {
+    border: 2px solid gray;
+}
+.reservation {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffe6e6;
+    border: 1px solid pink;
+}
+.reservation label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.reservation input[type="text"] {
+    width: 95%;
+    padding: 8px;
+}
+.reservation input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reservation input[type="submit"]:hover {
+    background-color: red;
+}
+.guidelines {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff3cd;
+    border-left: 5px solid orange;
+}
+.guidelines li {
+    margin: 10px;
+}

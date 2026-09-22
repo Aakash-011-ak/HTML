@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Reservation System</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+<div class="container">
+    <a href="1.html" class="back">← Back to Home</a>
+    <h1>WELCOME TO TRAIN RESERVATION PAGE</h1>
+    <p class="heading">SELECT YOUR TRAIN</p>
+    <h2>NEXT TRAIN DETAILS</h2>
+    <table>
+        <tr>
+            <th>TRAIN NAME</th>
+            <th>FROM</th>
+            <th>TO</th>
+            <th>FARE</th>
+            <th>SEAT COUNT</th>
+            <th>SEAT BOOKED</th>
+            <th>SEATS REMAINING</th>
+            <th>PHOTO</th>
+        </tr>
+        <tr>
+            <td>VAIGAI EXPRESS</td>
+            <td>MADURAI</td>
+            <td>MOSCOW</td>
+            <td>$144</td>
+            <td>300</td>
+            <td>100</td>
+            <td class="remaining">200</td>
+            <td>
+                <img src="q.jpg" width="150" height="120">
+            </td>
+        </tr>
+
+    </table>
+    <div class="booking">
+        <h2>Train Booking</h2>
+        <label>FROM</label>
+        <input type="text" placeholder="Enter source">
+        <label>TO</label>
+        <input type="text" placeholder="Enter destination">
+        <label>DATE</label>
+        <input type="date">
+        <input type="submit" value="BOOK TRAIN">
+    </div>
+    <div class="guidelines">
+        <h2>Guidelines</h2>
+        <ul>
+            <li>Do not bring outside food.</li>
+            <li>Be on time.</li>
+            <li>Carry a valid ID proof.</li>
+            <li>Keep your train ticket safely.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

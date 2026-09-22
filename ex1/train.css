@@ -1,0 +1,118 @@
+body {
+    background-color: #e8dff5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fffdf5;
+    border: 2px solid #7b2cbf;
+    border-radius: 10px;
+}
+
+.back {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back:hover {
+    color: #e91e63;
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+}
+
+.heading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+h2 {
+    color: #7b2cbf;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3e8ff;
+}
+
+td img {
+    border: 2px solid #7b2cbf;
+}
+
+.remaining {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.booking {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff4cc;
+    border: 1px solid #e0b000;
+}
+
+.booking label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking input[type="text"],
+.booking input[type="date"] {
+    width: 95%;
+    padding: 8px;
+}
+
+.booking input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking input[type="submit"]:hover {
+    background-color: #9d4edd;
+}
+
+.guidelines {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffe5ec;
+    border-left: 5px solid #e91e63;
+}
+
+.guidelines li {
+    margin: 10px;
+}
