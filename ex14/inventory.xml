@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+  <item>
+    <id>201</id>
+    <title>Data Structures and Algorithms</title>
+    <category>Textbook</category>
+    <stock>45</stock>
+    <price>54.99</price>
+  </item>
+  <item>
+    <id>202</id>
+    <title>Scientific Calculator FX-991ES</title>
+    <category>Electronics</category>
+    <stock>30</stock>
+    <price>22.50</price>
+  </item>
+  <item>
+    <id>203</id>
+    <title>Engineering Drawing Notebook</title>
+    <category>Stationery</category>
+    <stock>120</stock>
+    <price>4.75</price>
+  </item>
+  <item>
+    <id>204</id>
+    <title>Operating System Concepts</title>
+    <category>Textbook</category>
+    <stock>15</stock>
+    <price>68.00</price>
+  </item>
+  <item>
+    <id>205</id>
+    <title>Retractable Ballpoint Pen Pack</title>
+    <category>Stationery</category>
+    <stock>200</stock>
+    <price>3.99</price>
+  </item>
+  <item>
+    <id>206</id>
+    <title>Computer Networks Principles</title>
+    <category>Textbook</category>
+    <stock>25</stock>
+    <price>62.50</price>
+  </item>
+  <item>
+    <id>207</id>
+    <title>Heavy Duty Stapler</title>
+    <category>Stationery</category>
+    <stock>40</stock>
+    <price>7.25</price>
+  </item>
+  <item>
+    <id>208</id>
+    <title>Wireless Presentation Clicker</title>
+    <category>Electronics</category>
+    <stock>18</stock>
+    <price>19.99</price>
+  </item>
+  <item>
+    <id>209</id>
+    <title>Database System Management</title>
+    <category>Textbook</category>
+    <stock>35</stock>
+    <price>59.00</price>
+  </item>
+  <item>
+    <id>210</id>
+    <title>Sticky Notes Assorted Pack</title>
+    <category>Stationery</category>
+    <stock>150</stock>
+    <price>2.50</price>
+  </item>
+</inventory>
