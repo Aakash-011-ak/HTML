@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Trekking Materials Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #f8fafc;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #27ae60;
+            background-color: #fff;
+            box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        input[type="submit"]:hover {
+            background-color: #219653;
+        }
+        .view-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .view-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Apex Trekking Store</h2>
+        <form action="insert_order.php" method="POST">
+            <label for="customer_name">Customer Full Name:</label>
+            <input type="text" id="customer_name" name="customer_name" placeholder="e.g., John Doe" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+            <label for="item_name">Select Trekking Material / Gear:</label>
+            <select id="item_name" name="item_name" required>
+                <option value="">-- Choose Equipment --</option>
+                <option value="Alpine 3-Season Tent ($149.99)">Alpine 3-Season Tent - $149.99</option>
+                <option value="Carbon Fiber Trekking Poles ($45.00)">Carbon Fiber Trekking Poles - $45.00</option>
+                <option value="65L Expedition Backpack ($120.50)">65L Expedition Backpack - $120.50</option>
+                <option value="Extreme Cold Down Sleeping Bag ($89.99)">Extreme Cold Down Sleeping Bag - $89.99</option>
+                <option value="Waterproof Hiking Boots ($110.00)">Waterproof Hiking Boots - $110.00</option>
+                <option value="Portable Water Purifier Pump ($35.00)">Portable Water Purifier Pump - $35.00</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="price">Total Price ($):</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" placeholder="e.g., 149.99" required>
+
+            <input type="submit" value="Complete Purchase">
+        </form>
+        <a class="view-link" href="view_orders.php"> View All Customer Orders</a>
+    </div>
+</body>
+</html>
