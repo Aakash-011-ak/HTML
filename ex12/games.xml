@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <game>
+    <title>The Legend of Zelda: Breath of the Wild</title>
+    <genre>Action-Adventure</genre>
+    <platform>Nintendo Switch</platform>
+    <price>59.99</price>
+  </game>
+  <game>
+    <title>God of War Ragnarok</title>
+    <genre>Action</genre>
+    <platform>PlayStation 5</platform>
+    <price>69.99</price>
+  </game>
+  <game>
+    <title>Elden Ring</title>
+    <genre>RPG</genre>
+    <platform>PC</platform>
+    <price>49.99</price>
+  </game>
+  <game>
+    <title>Minecraft</title>
+    <genre>Sandbox</genre>
+    <platform>Multiplatform</platform>
+    <price>29.99</price>
+  </game>
+  <game>
+    <title>Cyberpunk 2077</title>
+    <genre>Action RPG</genre>
+    <platform>PC</platform>
+    <price>39.99</price>
+  </game>
+  <game>
+    <title>Halo Infinite</title>
+    <genre>First-Person Shooter</genre>
+    <platform>Xbox Series X</platform>
+    <price>39.99</price>
+  </game>
+  <game>
+    <title>Super Mario Odyssey</title>
+    <genre>Platformer</genre>
+    <platform>Nintendo Switch</platform>
+    <price>49.99</price>
+  </game>
+  <game>
+    <title>Red Dead Redemption 2</title>
+    <genre>Action-Adventure</genre>
+    <platform>PlayStation 4</platform>
+    <price>39.99</price>
+  </game>
+  <game>
+    <title>Grand Theft Auto V</title>
+    <genre>Action-Adventure</genre>
+    <platform>PC</platform>
+    <price>29.99</price>
+  </game>
+  <game>
+    <title>Hades</title>
+    <genre>Roguelike</genre>
+    <platform>Nintendo Switch</platform>
+    <price>24.99</price>
+  </game>
+</catalog>
