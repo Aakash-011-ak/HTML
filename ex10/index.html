@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Event Booking & Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 30px 0;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 520px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 8px;
+            color: #1b4332;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+            background-color: #fff;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #2d6a4f;
+            box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+        }
+
+        .field-group {
+            margin-bottom: 16px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row .field-group {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin: 20px 0 10px 0;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: #2d6a4f;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background: #1b4332;
+        }
+
+        input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="validate.php">
+        <h2>Mountain Trail Booking</h2>
+        <p class="subtitle">Secure your spot for our upcoming guided hike</p>
+
+        <div class="field-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="row">
+            <div class="field-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="10 digits" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="field-group">
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <label for="emergency_contact">Emergency Contact (Name & Phone):</label>
+            <input type="text" id="emergency_contact" name="emergency_contact" required>
+        </div>
+
+        <div class="field-group">
+            <label for="ticket_tier">Ticket Tier / Package:</label>
+            <select id="ticket_tier" name="ticket_tier" required>
+                <option value="">Choose Package</option>
+                <option value="standard">Standard Hike ($49)</option>
+                <option value="gear_rental">Hike + Gear Rental ($79)</option>
+                <option value="vip">VIP All-Inclusive ($129)</option>
+            </select>
+        </div>
+
+        <div class="section-title">Payment Information</div>
+
+        <div class="field-group">
+            <label for="ccnumber">Credit Card Number:</label>
+            <input type="text" id="ccnumber" name="ccnumber" placeholder="16 digits" maxlength="16" required>
+        </div>
+
+        <div class="row">
+            <div class="field-group">
+                <label for="ccexpiry">Expiry Date (MM/YY):</label>
+                <input type="text" id="ccexpiry" name="ccexpiry" placeholder="MM/YY" maxlength="5" required>
+            </div>
+            <div class="field-group">
+                <label for="cccvv">CVV:</label>
+                <input type="text" id="cccvv" name="cccvv" placeholder="3 digits" maxlength="3" required>
+            </div>
+        </div>
+
+        <input type="submit" value="Confirm Booking">
+    </form>
+</body>
+</html>
